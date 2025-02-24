@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Curriculum Vitae</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* Body and Background */
+        body {
+            background-image: url('Background.svg');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        /* Header */
+        header {
+        background-color: #030303;
+        color: #fff;
+        padding: 20px;
+    }
+
+    .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .header-container img {
+        width: 100px; /* image size */
+        height: 100px;
+        border-radius: 50%;
+    }
+
+    .header-text {
+        flex: 1;
+        text-align: center; /* Centers text */
+    }
+
+    /* Button */
+    .animated-button {
+        position: relative;
+        padding: 10px 20px;
+        font-size: 14px;
+        background-color: inherit;
+        border-radius: 50px;
+        font-weight: 600;
+        color: #ffffffe1;
+        box-shadow: 0 0 0 2px #ffffff20;
+        cursor: pointer;
+        transition: all 0.6s ease;
+    }
+
+    .animated-button span:last-child {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 20px;
+        height: 20px;
+        background-color: #2c3033;
+        border-radius: 50%;
+        opacity: 0;
+        transition: all 0.8s ease;
+    }
+
+    .animated-button:hover {
+        box-shadow: 0 0 0 5px #292b2c60;
+        color: #ffffff;
+    }
+
+    .animated-button:hover span:last-child {
+        width: 100px;
+        height: 100px;
+        opacity: 1;
+    } 
+        /* Main container */
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Section title */
+        .section-title {
+            font-size: 1.7em;
+            color: #333;
+            margin: 20px 0;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 10px;
+        }
+        
+        /* Contact info, education, experience, skills */
+        section {
+            margin-bottom: 30px;
+        }
+
+        /* Contact Information */
+        .contact-info p {
+            margin: 5px 0;
+        }
+
+        /* Education, Experience and Skills */
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin-bottom: 15px;
+        }
+
+        li strong {
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        li p {
+            font-size: 1em;
+            color: #666;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            font-size: 0.9em;
+            color: #000000;
+            background-color: #0a0a0a;
+            color: rgb(92, 85, 85);
+            padding: 10px 0;
+        }
+
+        /*For Responsiveness */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            header p {
+                font-size: 1em;
+            }
+
+            .container {
+                padding: 15px;
+            }
+
+            .section-title {
+                font-size: 1.5em;
+            }
+
+            ul {
+                padding-left: 20px;
+            }
+
+            li {
+                font-size: 0.95em;
+            }
+
+            footer {
+                font-size: 0.8em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            header p {
+                font-size: 0.9em;
+            }
+
+            .container {
+                padding: 15px;
+            }
+
+            .section-title {
+                font-size: 1.3em;
+            }
+
+            li {
+                font-size: 0.9em;
+            }
+
+            footer {
+                font-size: 0.7em;
+            }
+        }
+
+    </style>
+
+<script>
+    function showAlert() {
+        alert("I like to lift weights");
+    }
+</script>
+
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <img src="Profile.jpg" >
+            <div class="header-text">
+                <h2>Rakko Raj H. Delos Santos</h2>
+                <p>BSIT | 31A1</p>
+            </div>
+        <button class="animated-button" onclick="showAlert()">
+            <span>More</span>
+            <span></span>
+        </button>
+        </div>
+    </header>
+
+<div class="container">
+    <section class="contact-info">
+        <h2 class="section-title">Contact Information</h2>
+        <p>Email: rakodsantos05@example.com</p>
+        <p>Phone: 0962 325 8290</p>
+    </section>
+
+    <section class="education">
+        <h2 class="section-title">Education</h2>
+        <ul>
+            <li>
+                <strong>Tunasan National Highschool</strong> - Grade 11 -12
+                <br>
+                2020 - 2021
+            </li>
+ 
+            <li>
+                <strong>Muntinlupa Institute of Technology</strong> - High School (7 - 10)
+                <br>
+                2016 - 2020
+            </li>
+
+        </ul>
+    </section>
+
+    <section class="skills">
+        <h2 class="section-title">Skills</h2>
+        <ul>
+            <strong>Hard Skills</strong>
+            <br>
+            <li>Basic Knowledge to MS office</li>
+            <li>Basic Knowledge to VB.net</li>
+            <li>Basic Knowledge to Html and CSS</li>
+
+            <strong>Soft Skills</strong>
+            <br>
+            <li>Good Listener</li>
+            <li>Adaptable to Environment</li>
+            <li>Adaptable to Learn</li>
+            <li>Good Communication</li>
+            <li>Creative</li>
+        </ul>
+    </section>
+</div>
+</body>
+</html>
